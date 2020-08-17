@@ -1,0 +1,143 @@
+@media (max-width: 1199px){
+    .container{
+        max-width: 850px;
+    }
+    .promo{
+        &__header{
+            font-size: 40px;
+        }
+        &__subheader{
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .container{
+        max-width: 700px;
+    }
+    .header{
+        justify-content: space-around;
+        &__official{
+            display: none;
+        }
+    }
+    .promo{
+        padding: 21px 0 65px 0;
+        &__wrapper{
+            align-items: center;
+        }
+    }
+    .advantages{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 767px){
+    .promo{
+        min-height: 600px;
+        padding:21px 0 50px 0;
+        &__wrapper{
+            margin-top: 65px;
+        }
+        &__header{
+            font-size: 35px;
+            line-height: 35px;
+        }
+        &__subheader{
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__icons{
+            margin-top: 55px;
+        }
+    }
+    .button{
+        &_main{
+            margin-top: 55px;
+        }
+    }
+    .advantages{
+        padding: 40px 0;
+        &__wrapper{
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__block{
+            margin-top: 30px;
+        }
+        &__header{
+            font-size: 35px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .header{
+        &__logo{
+            display: block;
+            width: 45px;
+            height: 45px;
+            background: url('../icons/logo_mobile.png') center (center/cover) no-repeat;
+            img{
+                display: none;
+            }
+        }
+        &__phone{
+            font-size: 16px;
+        }
+    }
+    .promo{
+        min-height: 400px;
+        padding: 10px 0 15px 0;
+        &__wrapper{
+            margin: 25px 0;
+        }
+        &__header{
+            text-align: center;
+            font-size: 22px;
+        }
+        &__subheader{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 0;
+            line-height: 12px;
+        }
+        &__icons{
+            width: 260px;
+            margin-top: 25px;
+        }
+        &__icon{
+            width: 33%;
+            font-size: 10px;
+            img{
+                margin-bottom: 10px;
+            }
+        }
+        &__link{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+    .button{
+        &_main{
+            width: 260px;
+            height: 45px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    }
+    .advantages{
+        padding: 25px 0;
+        &__header{
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+        &__block{
+            margin-top: 20px;
+        }
+        span.block__header{
+            margin: 20px 0;
+        }
+    }
+    
+}
