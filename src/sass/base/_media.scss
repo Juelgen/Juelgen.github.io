@@ -30,8 +30,27 @@
     .advantages{
         padding: 50px 0;
     }
+    .consultation{
+        padding: 50px 0;
+        min-height: 650px;
+        .title{
+            text-align: center;
+            br{
+                display: none;
+            }
+        }
+        &__descr{
+            text-align: center;
+        }
+        .feed-form{
+            margin: 36px auto 0 auto;
+        }
+    }
 }
 @media (max-width: 767px){
+    .container{
+        max-width: 500px;
+    }
     .promo{
         min-height: 600px;
         padding:21px 0 50px 0;
@@ -65,12 +84,22 @@
         &__block{
             margin-top: 30px;
         }
-        &__header{
-            font-size: 35px;
+    }
+    .consultation{
+        min-height: 620px;
+        .title{
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &__descr{
+            margin-top: 55px;
         }
     }
 }
 @media (max-width: 575px){
+    .container{
+        max-width: 280px;
+    }
     .header{
         &__logo{
             display: block;
@@ -126,8 +155,8 @@
         }
     }
     .advantages{
-        padding: 25px 0;
-        &__header{
+        padding: 35px 0;
+        .title{
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 0;
@@ -139,5 +168,28 @@
             margin: 20px 0;
         }
     }
-    
+    .consultation{
+        min-height: 440px;
+        padding: 35px 0;
+        .title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__descr{
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 30px;
+        }
+        .feed-form{
+            width: 280px;
+            margin-top: 25px;
+            input{
+                height: 45px;
+            }
+        }
+        .button_submit{
+            height: 45px;
+            font-size: 14px;
+        }
+    }
 }
