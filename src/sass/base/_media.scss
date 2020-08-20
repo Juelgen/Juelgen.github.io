@@ -403,4 +403,40 @@
             }
         }
     }
+    .modal{
+        width: 280px;
+        min-height: 290px;
+        padding: 20px;
+        &__subtitle{
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__descr{
+            margin-top: 6px;
+            font-size: 11px;
+            line-height: 11px;
+        }
+        .feed-form{
+            width: 240px;
+            &_mt25{
+                margin-top: 15px;
+            }
+            input{
+                height: 40px;
+            }
+            .button_submit{
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .modal{
+        &__close{
+            top: 5px;
+            right: 4px;
+        }
+    }
 }

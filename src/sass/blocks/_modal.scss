@@ -43,6 +43,26 @@
     &_mini{
         min-height: 140px;
     }
+    .error{
+        border: 1px solid red;
+    }
+    label.error{
+        position: relative;
+        border: none;
+        margin-bottom: 10px;
+        margin-top: -5px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0 20px;
+        &:before{
+            content: '*';
+            color: red;
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            left: 7px;
+        }
+    }
 }
 
 

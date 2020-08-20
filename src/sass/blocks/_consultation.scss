@@ -10,4 +10,34 @@
         line-height: 24px;
         margin-top: 80px;
     }
+    .error{
+        border: 1px solid red;
+    }
+    label.error{
+        position: absolute;
+        top: 26px;
+        transform: translateY(-50%);
+        left: 310px;
+        width: 300px;
+        border: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 14px;
+        color: white;
+        height: 20px;
+        line-height: 14px;
+        vertical-align: middle;
+        &:before{
+            content: '*';
+            color: red;
+            font-size: 18px;
+            margin-right: 4px;
+        }
+        &:nth-child(4){
+            top: 91px;
+        }
+        &:nth-child(6){
+            top: 156px;
+        }
+    }
 }

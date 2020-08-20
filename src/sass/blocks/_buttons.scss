@@ -9,6 +9,12 @@
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.5s all;
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        outline: none;
+    }
     &:hover{
         box-shadow: 4px 2px 17px $main-color;
     }

@@ -1,4 +1,5 @@
 .feed-form{
+    position: relative;
     margin-top: 36px;
     display: flex;
     flex-direction: column;
@@ -13,7 +14,10 @@
         color: #4b4b4b;
         font-size: 14px;
         font-weight: 300;
-        &:nth-child(3){
+        &:focus{
+            outline: none;
+        }
+        &:nth-child(5){
             margin-bottom: 20px;
         }
     }
