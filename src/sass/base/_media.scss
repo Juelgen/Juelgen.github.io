@@ -369,16 +369,21 @@
                 margin-top: 40px;
             }
         }
+        &__comment{
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 14px;
+        }
     }
     .footer{
         height: 450px;
         &__info{
-            width: 280px;
-            height: 145px;
-            padding: 10px 20px;
+            width: 240px;
+            height: 130px;
+            padding: 10px;
         }
         &__addr{
-            font-size: 14px;
+            font-size: 13px;
             line-height: 13px;
             margin-bottom: 20px;
         }
@@ -388,7 +393,7 @@
         }
         &__social{
             width: 160px;
-            margin-top: 28px;
+            margin-top: 24px;
         }
         .social-item{
             width: 30px;
