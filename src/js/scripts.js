@@ -10,8 +10,28 @@ $(document).ready(function(){
                 settings: {
                     dots: true,
                     arrows: false,
+                    variableWidth: true,
                 }
             }
         ]
     });
+
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+        $(this)
+          .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+          .closest('div.container').find('div.catalog__contant').removeClass('catalog__contant_active').eq($(this).index()).addClass('catalog__contant_active');
+      });
+
+    function toggleSlide(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(evt) {
+                evt.preventDefault();
+                $('.catalog-item__main-info').eq(i).toggleClass('catalog-item__main-info_active');
+                $('.catalog-item__more-details').eq(i).toggleClass('catalog-item__more-details_active');
+            })
+        });
+    };
+
+    toggleSlide('.catalog-item__link');
+    toggleSlide('.catalog-item__back');
 });
