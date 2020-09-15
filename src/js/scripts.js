@@ -38,12 +38,17 @@ $(document).ready(function(){
     // modal
 
     $('[data-modal=consultation]').on('click', function(){
-        $('.overlay, #consultation' ).fadeIn();
+        $('.overlay, #consultation, .modal-main' ).fadeIn();
     });
 
     $('.modal__close').on('click', function(){
-        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+        $('.overlay, #consultation, #order, #thanks, .modal-main').fadeOut('slow');
     });
+
+    $('.overlay').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks, .modal-main').fadeOut('slow');
+    });
+
 
     $('.button_mini').each(function(i){
         $(this).on('click', function(){
