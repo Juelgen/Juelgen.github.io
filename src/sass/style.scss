@@ -1,5 +1,6 @@
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/animations';
 * {
     font-family: 'MuseoSans', sans-serif;
 }
@@ -10,7 +11,7 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
-@import 'blocks/advantahes';
+@import 'blocks/advantages';
 @import 'blocks/title';
 @import 'blocks/consultation';
 @import 'blocks/forms';
@@ -19,6 +20,7 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 
 
 @import 'base/media';

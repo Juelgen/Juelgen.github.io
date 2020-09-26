@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/icon_font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -64,17 +65,17 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__block">
-                    <img src="icons/advantages/cup.png" alt="cup">
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
                     <span class="block__header">Делимся опытом</span>
                     <div class="block_descr">Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__block">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <span class="block__header">Заботимся о здоровье</span>
                     <div class="block_descr">Мы работаем для того,<br> чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="advantages__block">
-                    <img src="icons/advantages/shoe.png" alt="shoe">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
                     <span class="block__header">Учим бегать</span>
                     <div class="block__descr">Помогаем с обучением<br> правильной технике бега!<br> Дружим с крупнейшей школой бега в<br> России - <span class="block_red">I LOVE RUNNING.</span></div>
                 </div>
@@ -437,7 +438,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__wrapper">
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s"> 
                     <img src="img/review/review_irina.png" alt="irina" class="reviews__img">
                     <div class="reviews__text">
                         <div class="reviews__subtitle">Ирина Иванченко</div>
@@ -452,7 +453,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/review/review_ivan.png" alt="ivan" class="reviews__img">
                     <div class="reviews__text">
                         <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -465,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/review/review_ulia.png" alt="ulia" class="reviews__img">
                     <div class="reviews__text">
                         <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -531,11 +532,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

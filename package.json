@@ -22,5 +22,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

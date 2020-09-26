@@ -31,4 +31,12 @@
             width: 70px;
         }
     }
+    &__icon{
+        &_animated{
+            animation: heartrate 1.5s ease infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }
 }
