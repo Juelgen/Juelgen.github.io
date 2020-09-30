@@ -160,6 +160,9 @@
     }
 }
 @media (max-width: 767px){
+    .pageup{
+        display: none;
+    }
     .container{
         max-width: 500px;
     }

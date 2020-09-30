@@ -116,7 +116,7 @@
         &__main-info{
             width: 50%;
             margin-right: 0;
-            transform: translateX(-100%);
+            transform: translateX(-107%);
             transition: 0.5s all;
             &_active{
                 margin-right: 20px;
@@ -133,7 +133,9 @@
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
+            height: 392px;
             &_active{
+                padding-left: 0;
                 margin-left: 0;
                 transform: translateX(-100%);
             }
